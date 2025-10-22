@@ -1,5 +1,3 @@
-# Hướng dẫn nhanh cho người mới
-
 - Mục tiêu: chạy script tuning MLP trên Boston Housing dataset.
 
 Files liên quan:
@@ -9,17 +7,19 @@ Files liên quan:
 
 1) Cài đặt phụ thuộc (từ project root)
 ```sh
-python -m venv .venv         # (tuỳ chọn) tạo virtualenv
+python -m venv .venv      
 # Windows
 .venv\Scripts\activate
 # macOS / Linux
 source .venv/bin/activate
 
-pip install -r [requirements.txt](http://_vscodecontentref_/0)
-
+pip install -r requirements.txt
+```
 2) Xem dataset
 File: resource/BostonHousing.csv
 
 3) Chạy code
+```sh
 cd src/mlp_tuning
 python -m mlp_tuning_boston.py
+```
